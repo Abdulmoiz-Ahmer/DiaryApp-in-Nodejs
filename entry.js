@@ -18,7 +18,7 @@ const addEntry = (_title, _body) => {
     console.log(chalk.bold.bgBlue.white("Entry Added!"));
   } else {
     console.log(chalk.bold.bgRed.white("Title Already Taken!"));
-    console.log(chalk.bold.bgGreen.white("Use list command to view all options."));
+    console.log(chalk.bold.white("Use list command to view all options."));
   }
 };
 
@@ -47,7 +47,7 @@ const removeEntry = title => {
     );
   } else {
     console.log(chalk.bold.bgRed.white("No Such Entry!"));
-    console.log(chalk.bold.bgGreen.white("Use list command to view all options."));
+    console.log(chalk.bold.white("Use list command to view all options."));
   }
 };
 
@@ -56,7 +56,7 @@ const readEntry = _title => {
   const searchedEntry = entries.find(entry => entry.title === _title);
   if (!searchedEntry) {
     console.log(chalk.bold.bgRed.white("No Such Entry!"));
-    console.log(chalk.bold.bgGreen.white("Use list command to view all options."));
+    console.log(chalk.bold.white("Use list command to view all options."));
   } else {
     console.log(
       chalk.bgBlue.white.bold("Title: ") +
@@ -81,7 +81,7 @@ const listEntries = () => {
 
   if (entries.length == 0) {
     console.log(chalk.bgRed.white.bold("No Entries Yet!"));
-    console.log(chalk.bold.bgGreen.white("Use Option --help to view all options."));
+    console.log(chalk.bold.white("Use Option --help to view all options."));
     return;
   }
   console.log(chalk.bgBlue.white.bold("Your Entries:"));
