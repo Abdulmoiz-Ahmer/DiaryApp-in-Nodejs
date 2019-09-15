@@ -59,17 +59,17 @@ const readEntry = _title => {
     console.log(chalk.bold.white("Use list command to view all options."));
   } else {
     console.log(
-      chalk.bgBlue.white.bold("Title: ") +
+      chalk.bgBlue.white.bold("Title:") +
         chalk.italic(`${searchedEntry.title}`)
     );
 
     console.log(
-      chalk.bgBlue.white.bold("Noted On: ") +
+      chalk.bgBlue.white.bold("Noted On:") +
         chalk.italic(`${searchedEntry.date}`)
     );
 
     console.log(
-      chalk.bgBlue.white.bold("Body: ") +
+      chalk.bgBlue.white.bold("Body:") +
         chalk.italic(`${searchedEntry.body}`)
     );
     
